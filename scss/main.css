@@ -3,17 +3,86 @@
   src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  list-style: none;
+}
+
+ul,
+li {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
 body {
   font-family: "Hanken Grotesk";
 }
 
 .container {
   max-width: 375px;
+  margin: 0 auto;
 }
 
 .result {
   background: -webkit-gradient(linear, left top, left bottom, from(#7857ff), to(#2e2be9));
   background: linear-gradient(#7857ff, #2e2be9);
   color: #c8c7ff;
+  padding: 25px;
+}
+
+.result__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.result__value__current {
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+}
+
+.result__value__initial {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.result__total__quality {
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+}
+
+.result__total__level {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.summary {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.summary__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.summary__list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.item__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */

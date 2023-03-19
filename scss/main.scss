@@ -3,18 +3,79 @@
   src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
     format("truetype");
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  list-style: none;
+}
+ul,
+li {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
 body {
   font-family: "Hanken Grotesk";
 }
 
 .container {
   max-width: 375px;
+  margin: 0 auto;
 }
 
 .result {
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   color: hsl(241, 100%, 89%);
+  padding: 25px;
 }
+
+.result__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.result__value__current {
+  font-size: 30px;
+  font-weight: 800;
+  color: hsl(0, 0%, 100%);
+}
+
+.result__value__initial {
+  font-size: 18px;
+  font-weight: 500;
+}
+.result__total__quality {
+  font-size: 20px;
+  font-weight: 800;
+  color: hsl(0, 0%, 100%);
+}
+
+.result__total__level {
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .summary {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.summary__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.summary__list {
+}
+
+.summary__list__item {
+  display: flex;
+  // flex-direction: column;
+  // flex-wrap: wrap;
+}
+.item__left {
+  display: flex;
 }
