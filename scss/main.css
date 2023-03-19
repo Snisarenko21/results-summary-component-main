@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+  font-family: "Hanken Grotesk";
+}
+
+.container {
+  max-width: 375px;
+}
+
+.result {
+  background: -webkit-gradient(linear, left top, left bottom, from(#7857ff), to(#2e2be9));
+  background: linear-gradient(#7857ff, #2e2be9);
+  color: #c8c7ff;
+}
+/*# sourceMappingURL=main.css.map */
