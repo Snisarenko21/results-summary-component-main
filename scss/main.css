@@ -35,54 +35,98 @@ body {
   background: linear-gradient(#7857ff, #2e2be9);
   color: #c8c7ff;
   padding: 25px;
+  border-bottom-right-radius: 15%;
+  border-bottom-left-radius: 15%;
 }
 
 .result__title {
+  text-align: center;
   font-size: 18px;
   font-weight: 700;
 }
 
+.result__value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4e21ca), to(rgba(36, 33, 202, 0)));
+  background: linear-gradient(#4e21ca, rgba(36, 33, 202, 0));
+}
+
 .result__value__current {
+  text-align: center;
   font-size: 30px;
   font-weight: 800;
   color: white;
 }
 
 .result__value__initial {
+  text-align: center;
   font-size: 18px;
   font-weight: 500;
 }
 
 .result__total__quality {
+  text-align: center;
   font-size: 20px;
   font-weight: 800;
   color: white;
 }
 
 .result__total__level {
+  text-align: center;
   font-size: 16px;
   font-weight: 500;
 }
 
 .summary {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 
 .summary__title {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
 }
 
-.summary__list__item {
+.summary__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
 }
 
-.item__left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.summary__bttn {
+  width: 300px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border-radius: 20px;
+  padding: 10px 32px;
+  display: block;
+  margin: 30px auto 0 auto;
+  color: white;
+  background-color: #303b5a;
+  border: none;
 }
 /*# sourceMappingURL=main.css.map */
