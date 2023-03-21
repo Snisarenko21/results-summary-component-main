@@ -34,9 +34,40 @@ body {
   height: 100%;
 }
 
+@media (min-width: 1280px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .container {
   max-width: 375px;
   margin: 0 auto;
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 730px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    min-height: 512px;
+    -webkit-box-shadow: 0px 4px 8px #c8c7ff;
+            box-shadow: 0px 4px 8px #c8c7ff;
+    border-radius: 32px;
+  }
 }
 
 .result {
@@ -46,6 +77,19 @@ body {
   padding: 30px 60px 40px;
   border-bottom-right-radius: 15%;
   border-bottom-left-radius: 15%;
+}
+
+@media (min-width: 1280px) {
+  .result {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    border-radius: 32px;
+    padding: 40px 60px 55px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .result__title {
@@ -106,13 +150,26 @@ body {
   padding: 20px;
 }
 
+@media (min-width: 1280px) {
+  .summary {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 40px 60px 55px;
+    margin-top: 20px;
+  }
+}
+
 .summary__title {
   font-weight: 700;
   color: #303b5a;
-}
-
-.item__text {
-  font-weight: 500;
 }
 
 .summary__item {
@@ -174,6 +231,10 @@ body {
   margin-left: 8px;
 }
 
+.item__text {
+  font-weight: 500;
+}
+
 .text__bold {
   font-weight: 700;
   color: #303b5a;
@@ -197,5 +258,12 @@ body {
   color: #c8c7ff;
   background-color: #303b5a;
   border: none;
+  cursor: pointer;
+}
+
+.summary__bttn:hover,
+.summary__bttn:focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(#7857ff), to(#2e2be9));
+  background: linear-gradient(#7857ff, #2e2be9);
 }
 /*# sourceMappingURL=main.css.map */
