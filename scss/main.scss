@@ -1,12 +1,3 @@
-// @media screen and (min-width: 768px) {
-//     max-width: 768px;
-//     padding: 0 32px;
-//   }
-//   @media screen and (min-width: 1280px) {
-//     max-width: 1280px;
-//     padding: 20px 16px 0;
-// }
-
 @font-face {
   font-family: "Hanken Grotesk";
   src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
@@ -132,12 +123,13 @@ body {
     flex: 1 1 100%;
     display: flex;
     flex-direction: column;
-    padding: 40px 60px 55px;
+    padding: 40px 30px 55px;
     margin-top: 20px;
   }
 }
 
 .summary__title {
+  font-size: 24px;
   font-weight: 700;
   color: hsl(224, 30%, 27%);
 }
@@ -147,7 +139,6 @@ body {
   align-items: baseline;
   justify-content: space-between;
   padding: 8px;
-  background-color: grey;
   border-radius: 8px;
   margin-top: 20px;
 }
@@ -204,7 +195,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   width: 100%;
-  min-height: 3rem;
+  min-height: 2rem;
   line-height: 1.87;
   letter-spacing: 0.06em;
   border-radius: 30px;
@@ -220,4 +211,20 @@ body {
 .summary__bttn:hover,
 .summary__bttn:focus {
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 8px;
+
+  @include tablet {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }

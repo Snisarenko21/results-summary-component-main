@@ -162,12 +162,13 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 40px 60px 55px;
+    padding: 40px 30px 55px;
     margin-top: 20px;
   }
 }
 
 .summary__title {
+  font-size: 24px;
   font-weight: 700;
   color: #303b5a;
 }
@@ -183,7 +184,6 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 8px;
-  background-color: grey;
   border-radius: 8px;
   margin-top: 20px;
 }
@@ -248,7 +248,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   width: 100%;
-  min-height: 3rem;
+  min-height: 2rem;
   line-height: 1.87;
   letter-spacing: 0.06em;
   border-radius: 30px;
@@ -265,5 +265,25 @@ body {
 .summary__bttn:focus {
   background: -webkit-gradient(linear, left top, left bottom, from(#7857ff), to(#2e2be9));
   background: linear-gradient(#7857ff, #2e2be9);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+@media (min-width: 1280px) {
+  .attribution {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+.attribution a {
+  color: #3e52a3;
 }
 /*# sourceMappingURL=main.css.map */
