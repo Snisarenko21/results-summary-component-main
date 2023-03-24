@@ -75,7 +75,7 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#7857ff), to(#2e2be9));
   background: linear-gradient(#7857ff, #2e2be9);
   color: #c8c7ff;
-  padding: 30px 60px 40px;
+  padding: 30px 40px 40px;
   border-bottom-right-radius: 15%;
   border-bottom-left-radius: 15%;
 }
@@ -83,11 +83,10 @@ body {
 @media (min-width: 1280px) {
   .result {
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
+        -ms-flex: 1 1 90%;
+            flex: 1 1 90%;
     border-radius: 32px;
-    margin-bottom: 1rem;
-    padding: 40px 40px 55px;
+    padding: 40px 60px 55px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -95,6 +94,7 @@ body {
 }
 
 .result__title {
+  font-size: 1.5rem;
   text-align: center;
   font-weight: 700;
 }
@@ -166,7 +166,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 40px 30px 55px;
+    padding: 22px 30px 55px;
     margin-top: 20px;
   }
 }
@@ -256,7 +256,7 @@ body {
   border-radius: 30px;
   padding: 1rem 1rem;
   display: block;
-  margin: 2rem 0 1rem 0;
+  margin-top: 3rem;
   color: #c8c7ff;
   background-color: #303b5a;
   border: none;
@@ -278,6 +278,7 @@ body {
 @media (min-width: 1280px) {
   .attribution {
     position: absolute;
+    bottom: 20px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
